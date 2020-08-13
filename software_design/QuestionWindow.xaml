@@ -1,0 +1,35 @@
+﻿<Window x:Class="software_design.QuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="QuestionWindow" Height="450" Width="800" BorderBrush="#FFFCFFD5" Foreground="#FFFFFDDD" Background="#FFF7F3D0">
+    <Grid Background="#FFFCFBE8">
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,10,9.6,69" Background="#FFFDFFF1" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="14" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="状态" Width="50" Binding="{Binding Status}" />
+                <DataGridTemplateColumn Header="问题" Width="400" >
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <TextBlock TextWrapping="Wrap" Text="{Binding Question}" ToolTipService.ToolTip="{Binding Question}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="答案" Width="350" >
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <TextBlock TextWrapping="Wrap" Text="{Binding Answer}" ToolTipService.ToolTip="{Binding Answer}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="QuestionBox" HorizontalAlignment="Left" Height="54" Margin="10,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="520" Background="#FFEDFFEE" BorderBrush="{x:Null}" FontFamily="Arial Black"/>
+        <Button x:Name="UploadQues" Content="提交问题" HorizontalAlignment="Left" Height="54" Margin="535,356,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click" Background="#FFFFFCE8" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="刷新" HorizontalAlignment="Left" Height="54" Margin="690,356,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click_1" Background="#FFFDF4FF" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>

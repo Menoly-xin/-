@@ -1,0 +1,194 @@
+﻿<Window x:Class="software_design.InfChangeTea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="InfChangeTea" Height="450" Width="800">
+    <Grid Background="#FFFDFDEB">
+        <Label Content="姓名" HorizontalAlignment="Left" Height="36" Margin="179,75,0,0" VerticalAlignment="Top" Width="72" FontFamily="Arial Black" FontSize="16" Background="#FFEDB2B2" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.112" Y="-0.201"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="InfName_Copy" Content="性别" HorizontalAlignment="Left" Height="28" Margin="179,117,0,0" VerticalAlignment="Top" Width="72" FontFamily="Arial Black" FontSize="16" Background="#FFCDDF65" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.073" Y="-0.201"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="InfName_Copy1" Content="班级" HorizontalAlignment="Left" Height="26" Margin="179,151,0,0" VerticalAlignment="Top" Width="72" FontFamily="Arial Black" FontSize="16" Background="#FF95FADF" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.039" Y="-0.201"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="InfName_Copy2" Content="邮箱" HorizontalAlignment="Left" Height="31" Margin="179,183,0,0" VerticalAlignment="Top" Width="72" FontFamily="Arial Black" FontSize="16" Background="#FF9CFCF3" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.003" Y="-0.201"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="InfName_Copy3" Content="原密码" HorizontalAlignment="Left" Height="30" Margin="179,256,0,0" VerticalAlignment="Top" Width="72" FontFamily="Arial Black" FontSize="16" Background="#FFB6DDF4" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.07" Y="-0.201"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="InfName_Copy4" Content="新密码" HorizontalAlignment="Left" Height="30" Margin="179,292,0,0" VerticalAlignment="Top" Width="72" FontFamily="Arial Black" FontSize="16" Background="#FFE4ADEB" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.108" Y="-0.201"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="InfName_Copy5" Content="确认密码" HorizontalAlignment="Left" Height="30" Margin="179,328,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.454,1.493" FontFamily="Arial Black" FontSize="14" Background="#FFF0EDC0">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.185" Y="-0.205"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="InfName" HorizontalAlignment="Left" Height="36" Margin="256,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Background="#FFA1FF9F" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.112" Y="0.012"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="InfClass" HorizontalAlignment="Left" Height="26" Margin="256,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Background="#FFE5ED8F" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.039" Y="0.012"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="InfEmail" HorizontalAlignment="Left" Height="31" Margin="256,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Background="#FFB7EE95" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.003" Y="0.012"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="InfOldPas" HorizontalAlignment="Left" Height="30" Margin="256,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontFamily="Arial Black" FontSize="16" Background="#FFC8F9A9" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.071" Y="0.012"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="InfNewPas" HorizontalAlignment="Left" Height="30" Margin="256,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontFamily="Arial Black" FontSize="16" Background="#FFF8F9B0" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.108" Y="0.012"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="InfComPas" HorizontalAlignment="Left" Height="32" Margin="256,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontFamily="Arial Black" FontSize="16" Background="#FFFFFFDA" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.148" Y="0.012"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="ButtonName" Content="修改" HorizontalAlignment="Left" Height="140" Margin="584,75,0,0" VerticalAlignment="Top" Width="48" Click="ButtonName_Click" Background="#FF88EEE5" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.077" Y="0.209"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="修改" HorizontalAlignment="Left" Height="95" Margin="582,257,0,0" VerticalAlignment="Top" Width="50" Click="Button_Click" Background="#FFD1FDFD" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.083" Y="0.209"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="                    个人基本信息修改" HorizontalAlignment="Left" Height="41" Margin="179,28,0,0" VerticalAlignment="Top" Width="451" FontFamily="Arial Black" FontSize="20" Background="#FFBAF4F7" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.151" Y="-0.029"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="                          密码修改" HorizontalAlignment="Left" Height="30" Margin="179,220,0,0" VerticalAlignment="Top" Width="451" FontFamily="Arial Black" FontSize="20" Background="#FFFDF1B3" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="-0.034" Y="-0.03"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="InfSex" HorizontalAlignment="Left" Height="28" Margin="256,117,0,0" VerticalAlignment="Top" Width="319" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.07"/>
+                    <TranslateTransform X="0.073" Y="0.012"/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+            <RadioButton Content="男"/>
+            <RadioButton Content="女"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

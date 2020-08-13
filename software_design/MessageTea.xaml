@@ -1,0 +1,24 @@
+﻿<Window x:Class="software_design.MessageTea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="MessageTea" Height="450" Width="800">
+    <Grid Background="#FFFFFAE4">
+        <DataGrid Name="DG5" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="25,10,24.6,130" Background="#FFFFFFF2" FontFamily="Arial Black" FontSize="14" BorderBrush="White" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="学号" Binding="{Binding UserCode}"  Width="150" />
+                <DataGridTextColumn Header="姓名"  Binding="{Binding UserName}" Width="100"/>
+                <DataGridTextColumn Header="性别" Binding="{Binding UserSex}" Width="50" />
+                <DataGridTextColumn Header="班级" Binding="{Binding UserClass}" Width="150" />
+                <DataGridTextColumn Header="邮箱" Binding="{Binding UserEmail}" Width="200" />
+                <DataGridCheckBoxColumn Header="选定" Binding="{Binding UserSelect,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="90" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Height="115" Margin="25,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="664" FontFamily="Arial Black" FontSize="16" Background="#FFE3FFE0" BorderBrush="{x:Null}"/>
+        <Button x:Name="SendMessage" Content="发送" HorizontalAlignment="Left" Height="115" Margin="694,295,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="SendMessage_Click" Background="#FFEEFFFD" FontFamily="Arial Black" FontSize="20" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>

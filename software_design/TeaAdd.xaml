@@ -1,0 +1,25 @@
+﻿<Window x:Class="software_design.TeaAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="TeaAdd" Height="450" Width="800">
+    <Grid Background="#FFFFFFEE">
+        <Label Content="Label" HorizontalAlignment="Left" Height="15" Margin="121,395,0,0" VerticalAlignment="Top" Width="28"/>
+        <Label Content="用户名" HorizontalAlignment="Left" Height="57" Margin="189,31,0,0" VerticalAlignment="Top" Width="117" FontFamily="Arial Black" FontSize="16" Background="#FFFFFDDA"/>
+        <Label Content="密码" HorizontalAlignment="Left" Height="50" Margin="189,93,0,0" VerticalAlignment="Top" Width="117" FontFamily="Arial Black" FontSize="16" Background="#FFE5E5E3"/>
+        <Label Content="确认密码" HorizontalAlignment="Left" Height="49" Margin="189,149,0,0" VerticalAlignment="Top" Width="117" FontFamily="Arial Black" FontSize="16" Background="#FFDAFACB"/>
+        <Label Content="电子邮箱" HorizontalAlignment="Left" Height="53" Margin="189,203,0,0" VerticalAlignment="Top" Width="117" FontFamily="Arial Black" FontSize="16" Background="#FFDDFCF6"/>
+        <TextBox x:Name="UserContent" HorizontalAlignment="Left" Height="50" Margin="312,38,0,0" TextWrapping="Wrap" Text="M2017xxxxx" VerticalAlignment="Top" Width="353" BorderBrush="{x:Null}" Background="#FFF1FFFE" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="EmailContent" HorizontalAlignment="Left" Height="53" Margin="312,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353" BorderBrush="{x:Null}" Background="#FFD9FFFE" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="提交" HorizontalAlignment="Left" Margin="189,316,0,0" VerticalAlignment="Top" Width="476" Click="UploadClick" Background="#FFDAFAFF" Height="51" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <Label Content="身份" HorizontalAlignment="Left" Height="50" Margin="189,261,0,0" VerticalAlignment="Top" Width="117" FontFamily="Arial Black" FontSize="16" Background="#FFE0E0E0"/>
+        <ComboBox x:Name="ID" HorizontalAlignment="Left" Height="50" Margin="312,261,0,0" VerticalAlignment="Top" Width="353" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16">
+            <Button BorderBrush="White" Background="White" Content="老师"/>
+        </ComboBox>
+        <PasswordBox x:Name="PasswordContent" HorizontalAlignment="Left" Height="49" Margin="312,94,0,0" VerticalAlignment="Top" Width="353" BorderBrush="{x:Null}" Background="#FFFFEDFE" FontFamily="Arial Black" FontSize="16"/>
+        <PasswordBox x:Name="ConfirmContent" HorizontalAlignment="Left" Height="50" Margin="312,148,0,0" VerticalAlignment="Top" Width="353" BorderBrush="{x:Null}" Background="#FFF8F9EE" FontFamily="Arial Black" FontSize="16"/>
+    </Grid>
+</Window>

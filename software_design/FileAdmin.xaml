@@ -1,0 +1,28 @@
+﻿<Window x:Class="software_design.FileAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="FileAdmin" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Upload" Content="上传" HorizontalAlignment="Left" Height="36" Margin="520,10,0,0" VerticalAlignment="Top" Width="95" Click="Upload_Click" Background="#FF7AF653" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button x:Name="download" Content="下载" HorizontalAlignment="Left" Height="36" Margin="615,9,0,0" VerticalAlignment="Top" Width="95" Click="download_Click" Background="#FF89F7DE" FontSize="16" BorderBrush="{x:Null}"/>
+        <DataGrid x:Name="DG_FilStu" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,51,9.6,10" Background="#FFFFFDF2" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="14" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="上传人" Binding="{Binding Uploader}" Width="120" />
+                <DataGridTextColumn Header="文件名"  Binding="{Binding File_Name}" Width="580"/>
+                <DataGridCheckBoxColumn Header="选定" Binding="{Binding FileSelect, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="70" />
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="上传者:" HorizontalAlignment="Left" Height="34" Margin="10,12,0,0" VerticalAlignment="Top" Width="65" FontSize="16" FontFamily="Arial Black" Background="#FFDCD7D7"/>
+        <Button x:Name="SearchFile" Content="查询" HorizontalAlignment="Left" Height="36" Margin="330,10,0,0" VerticalAlignment="Top" Width="95" Click="SearchFile_Click" Background="#FFE0E0E0" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="FileBox" HorizontalAlignment="Left" Height="34" Margin="80,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Background="#FFFFEAEA" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="刷新" HorizontalAlignment="Left" Height="36" Margin="425,9,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click" Background="#FFEAE66B" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}" RenderTransformOrigin="0.487,0.391"/>
+        <Button x:Name="Delete" Content="删除" HorizontalAlignment="Left" Height="33" Margin="715,12,0,0" VerticalAlignment="Top" Width="69" Background="#FFF98F8F" FontSize="16" Click="FileAdmin_Delete"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="software_design.GrowthManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="GrowthManage" Height="450" Width="800">
+    <Grid Background="#FFFFFFF5">
+        <Label Content="姓名:" HorizontalAlignment="Left" Height="33" Margin="26,10,0,0" VerticalAlignment="Top" Width="49" FontFamily="Arial Black" FontSize="16" Background="#FFFAD0D0"/>
+        <TextBox x:Name="GrowthText" HorizontalAlignment="Left" Height="340" Margin="26,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="603" FontFamily="Arial Black" FontSize="16" Background="#FFDAD6D6" BorderBrush="{x:Null}"/>
+        <Button x:Name="提交" Content="提交" HorizontalAlignment="Left" Height="58" Margin="634,330,0,0" VerticalAlignment="Top" Width="123" Click="提交_Click" Background="#FFF3F78E" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button x:Name="ReFresh" Content="刷新" HorizontalAlignment="Left" Height="58" Margin="634,267,0,0" VerticalAlignment="Top" Width="123" Click="ReFresh_Click" Background="#FFB2F4EE" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <RadioButton x:Name="two" Content="大二" HorizontalAlignment="Left" Margin="629,97,0,0" VerticalAlignment="Top" Height="56" Width="128" BorderBrush="{x:Null}"/>
+        <RadioButton x:Name="four" Content="大四" HorizontalAlignment="Left" Margin="634,210,0,0" VerticalAlignment="Top" Height="50" Width="123" BorderBrush="{x:Null}"/>
+        <RadioButton x:Name="one" Content="大一" HorizontalAlignment="Left" Margin="629,43,0,0" VerticalAlignment="Top" IsChecked="True" Height="49" Width="123" BorderBrush="{x:Null}"/>
+        <RadioButton x:Name="three" Content="大三" HorizontalAlignment="Left" Margin="629,158,0,0" VerticalAlignment="Top" Height="47" Width="123" BorderBrush="{x:Null}"/>
+        <Label x:Name="HisName" Content="" HorizontalAlignment="Left" Height="33" Margin="80,10,0,0" VerticalAlignment="Top" Width="549" Background="#FFFAFCE8"/>
+
+    </Grid>
+</Window>

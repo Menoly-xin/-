@@ -1,0 +1,33 @@
+﻿<Window x:Class="software_design.AdminInfTeaChange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="AdminInfTeaChange" Height="450" Width="800">
+    <Grid Background="#FFFFFFF2">
+        <Label Content="姓名" HorizontalAlignment="Left" Height="49" Margin="209,92,0,0" VerticalAlignment="Top" Width="62" FontSize="16" FontFamily="Arial Black"/>
+        <Label x:Name="InfName_Copy" Content="性别" HorizontalAlignment="Left" Height="48" Margin="209,151,0,0" VerticalAlignment="Top" Width="62" FontSize="16" FontFamily="Arial Black"/>
+        <Label x:Name="InfName_Copy1" Content="管理班级" HorizontalAlignment="Left" Height="39" Margin="200,204,0,0" VerticalAlignment="Top" Width="76" FontSize="16" FontFamily="Arial Black"/>
+        <Label x:Name="InfName_Copy2" Content="邮箱" HorizontalAlignment="Left" Height="41" Margin="209,258,0,0" VerticalAlignment="Top" Width="62" FontSize="16" FontFamily="Arial Black"/>
+        <TextBox x:Name="InfName" HorizontalAlignment="Left" Height="49" Margin="276,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="#FFA7EDA2" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="InfClass" HorizontalAlignment="Left" Height="57" Margin="276,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="#FFE78FEB" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="InfEmail" HorizontalAlignment="Left" Height="51" Margin="276,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="#FFF7D1E2" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="ButtonName" Content="修改" HorizontalAlignment="Left" Height="49" Margin="552,88,0,0" VerticalAlignment="Top" Width="61" Click="ButtonName_Click" Background="#FFF3E250" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="ButtonSex" Content="修改" HorizontalAlignment="Left" Height="54" Margin="552,137,0,0" VerticalAlignment="Top" Width="61" Click="ButtonSex_Click" Background="#FFF6C0C0" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="BUttonClass" Content="修改" HorizontalAlignment="Left" Height="57" Margin="552,191,0,0" VerticalAlignment="Top" Width="61" Click="BUttonClass_Click" Background="#FFE6BCF4" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="ButtonEmail" Content="修改" HorizontalAlignment="Left" Height="51" Margin="552,248,0,0" VerticalAlignment="Top" Width="61" Click="ButtonEmail_Click" Background="#FFFFC9F2" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Label Content="      个人基本信息修改" HorizontalAlignment="Left" Height="42" Margin="290,41,0,0" VerticalAlignment="Top" Width="276" FontSize="20" FontFamily="Arial Black"/>
+        <ComboBox x:Name="InfSex" HorizontalAlignment="Left" Height="54" Margin="276,137,0,0" VerticalAlignment="Top" Width="276" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF3CCABD" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <RadioButton Content="男"/>
+            <RadioButton Content="女"/>
+        </ComboBox>
+    </Grid>
+</Window>

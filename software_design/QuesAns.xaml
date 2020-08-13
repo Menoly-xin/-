@@ -1,0 +1,34 @@
+﻿<Window x:Class="software_design.QuesAns"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="QuesAns" Height="450" Width="800">
+    <Grid Background="#FFFCFDE4">
+        <DataGrid Name="DG4" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,10,9.6,69" Background="#FFFEFFF2" FontFamily="Arial Black" FontSize="14" BorderBrush="{x:Null}"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="状态" Binding="{Binding TeaStatus}" Width="50" />
+                <DataGridTextColumn Header="提问者"  Binding="{Binding TeaName}" Width="60"/>
+                <DataGridTemplateColumn Header="问题" Width="270" >
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <TextBlock TextWrapping="Wrap" Text="{Binding TeaQuestion}" ToolTipService.ToolTip="{Binding TeaQuestion}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="答案" Width="290" >
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <TextBlock TextWrapping="Wrap" Text="{Binding TeaAnswer}" ToolTipService.ToolTip="{Binding TeaAnswer}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridCheckBoxColumn Header="选定回答" Binding="{Binding TeaSelectQues,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="70" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AnsQuestion" Content="回答选中问题" HorizontalAlignment="Left" Height="38" Margin="10,356,0,0" VerticalAlignment="Top" Width="378" Click="AnsQuestion_Click" Background="#FFE9FFE4" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button Content="刷新" HorizontalAlignment="Left" Height="38" Margin="393,356,0,0" VerticalAlignment="Top" Width="391" Click="Button_Click" Background="#FFEAFEFF" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+    </Grid>
+</Window>

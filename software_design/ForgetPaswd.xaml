@@ -1,0 +1,27 @@
+﻿<Window x:Class="software_design.ForgetPaswd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="ForgetPaswd" Height="450" Width="800">
+    <Grid Background="#FFFBFCF5">
+        <Label Content="用户名" HorizontalAlignment="Left" Height="45" Margin="253,37,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-1.904,-1.565" FontSize="16" FontFamily="Arial Black" Background="#FFFAF8E8"/>
+        <Label Content="验证码" HorizontalAlignment="Left" Height="38" Margin="253,137,0,0" VerticalAlignment="Top" Width="96" FontSize="16" FontFamily="Arial Black" Background="#FFCFFFF4"/>
+        <TextBox x:Name="ForgetUserContent" HorizontalAlignment="Left" Height="45" Margin="354,37,0,0" TextWrapping="Wrap" Text="U2017xxxxx" VerticalAlignment="Top" Width="216" FontSize="16" FontFamily="Arial Black" Background="#FFEFF99E" BorderBrush="{x:Null}"/>
+        <Label Content="身份" HorizontalAlignment="Left" Height="41" Margin="253,91,0,0" VerticalAlignment="Top" Width="96" FontSize="16" FontFamily="Arial Black" Background="#FFFFFAC9"/>
+        <ComboBox x:Name="ForgetID" HorizontalAlignment="Left" Height="41" Margin="354,91,0,0" VerticalAlignment="Top" Width="216" BorderBrush="{x:Null}">
+            <Button BorderBrush="White" Background="White" Content="学生"/>
+            <Button BorderBrush="White" Background="White" Content="老师"/>
+        </ComboBox>
+        <Button Content="提交" HorizontalAlignment="Left" Height="51" Margin="253,329,0,0" VerticalAlignment="Top" Width="317" Click="Button_Click" Background="#FFFAC4F3" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <Label Content="新密码" HorizontalAlignment="Left" Height="40" Margin="253,231,0,0" VerticalAlignment="Top" Width="96" FontSize="16" FontFamily="Arial Black" Background="#FFF6D5FC"/>
+        <Label Content="确认密码" HorizontalAlignment="Left" Height="48" Margin="253,276,0,0" VerticalAlignment="Top" Width="96" FontSize="16" FontFamily="Arial Black" RenderTransformOrigin="0.387,0.007" Background="#FFFFF9E1"/>
+        <PasswordBox x:Name="ForgetPasword" HorizontalAlignment="Left" Height="40" Margin="354,231,0,0" VerticalAlignment="Top" Width="216" Background="#FFD6CACA" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <PasswordBox x:Name="ConfirmForgetPasswrd" HorizontalAlignment="Left" Height="48" Margin="354,276,0,0" VerticalAlignment="Top" Width="216" Background="#FFC8F0A2" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="获取验证码" HorizontalAlignment="Left" Height="46" Margin="253,180,0,0" VerticalAlignment="Top" Width="317" Background="#FFFAC4F3" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}" Click="Button_Click_1"/>
+        <TextBox x:Name="VerifyCode" HorizontalAlignment="Left" Height="38" Margin="354,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" BorderBrush="{x:Null}" Background="#FFB6FFAF"/>
+
+    </Grid>
+</Window>

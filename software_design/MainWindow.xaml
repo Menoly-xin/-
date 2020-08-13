@@ -1,0 +1,29 @@
+﻿<Window x:Class="software_design.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFFFFDDF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="278*"/>
+            <RowDefinition Height="143*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="UserText" HorizontalAlignment="Left" Height="38" Margin="205,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFB5EE8C" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}" />
+        <Button x:Name="Login1" Content="登录" HorizontalAlignment="Left" Height="46" Margin="116,205,0,0" VerticalAlignment="Top" Width="453" RenderTransformOrigin="0.522,3.164" Click="Login1_Click" Background="#FF90F9EC" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button x:Name="Cancel" Content="取消" HorizontalAlignment="Left" Height="43" Margin="116,257,0,0" VerticalAlignment="Top" Width="453" Click="Cancel_Click" Background="#FFEEB0FF" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
+        <Label Content="用户名:" HorizontalAlignment="Left" Height="38" Margin="116,112,0,0" VerticalAlignment="Top" Width="83" FontFamily="Arial Black" FontSize="16" Background="#FFF4F979"/>
+        <Label Content="密码:" HorizontalAlignment="Left" Height="39" Margin="116,160,0,0" VerticalAlignment="Top" Width="83" FontFamily="Arial Black" FontSize="16" Background="#FF90F689"/>
+        <RadioButton x:Name="sturadio" Content="学生" HorizontalAlignment="Left" Margin="189,62.5,0,0" VerticalAlignment="Top" IsChecked="True" Width="93" Height="25" FontFamily="Arial Black" FontSize="16" Grid.Row="1"/>
+        <RadioButton x:Name="tearadio" Content="老师" HorizontalAlignment="Left" Margin="326,62.5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.597" Height="25" Width="112" FontFamily="Arial Black" FontSize="16" Grid.Row="1"/>
+        <RadioButton x:Name="admradio" Content="管理员" HorizontalAlignment="Left" Margin="478,62.5,0,0" VerticalAlignment="Top" Height="25" Width="127" FontFamily="Arial Black" FontSize="16" Grid.Row="1"/>
+        <Button x:Name="register" Content="注册" HorizontalAlignment="Left" Height="87" Margin="575,112,0,0" VerticalAlignment="Top" Width="111" BorderBrush="{x:Null}" Click="UserRegister" Background="#FFFAF78D" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="fogetpas" Content="忘记密码" HorizontalAlignment="Left" Height="95" Margin="575,205,0,0" VerticalAlignment="Top" Width="111" Background="#FFD7F7F7" BorderBrush="{x:Null}" Click="fogetpas_Click" FontFamily="Arial Black" FontSize="16" Grid.RowSpan="2"/>
+        <PasswordBox x:Name="PasText" HorizontalAlignment="Left" Height="39" Margin="205,160,0,0" VerticalAlignment="Top" Width="364" Background="#FFF9F4EA" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Label Content="                                学生管理系统" HorizontalAlignment="Left" Height="57" Margin="116,49,0,0" VerticalAlignment="Top" Width="570" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.836,0.512" Background="#FFFFF2FF"/>
+
+
+    </Grid>
+</Window>

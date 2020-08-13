@@ -1,0 +1,34 @@
+﻿<Window x:Class="software_design.AdminMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="AdminMessage" Height="450" Width="800">
+    <Grid Background="#FFFFFEED">
+        <DataGrid Name="DG12" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="26,45,397.6,150" RenderTransformOrigin="0.628,0.501" Background="#FFF7F6EB" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="学号" Binding="{Binding UserCode}"  Width="100" />
+                <DataGridTextColumn Header="姓名"  Binding="{Binding UserName}" Width="75"/>
+                <DataGridTextColumn Header="性别" Binding="{Binding UserSex}" Width="50" />
+                <DataGridTextColumn Header="班级" Binding="{Binding UserClass}" Width="80" />
+                <DataGridCheckBoxColumn Header="选定" Binding="{Binding UserSelect,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="50" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Height="140" Margin="26,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="645" Background="#FFFFE4E4" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="SendMessage" Content="发送" HorizontalAlignment="Left" Height="140" Margin="671,270,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" Click="SendMessage_Click" Background="#FFCECECE" FontFamily="Arial Black" FontSize="20" BorderBrush="{x:Null}"/>
+        <DataGrid x:Name="DG13" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="401,45,19.6,150" Background="#FFF4FCF4" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="职工号" Binding="{Binding UserCode}"  Width="100" />
+                <DataGridTextColumn Header="姓名"  Binding="{Binding UserName}" Width="75"/>
+                <DataGridTextColumn Header="性别" Binding="{Binding UserSex}" Width="50" />
+                <DataGridTextColumn Header="管理班级" Binding="{Binding UserClass}" Width="80" />
+                <DataGridCheckBoxColumn Header="选定" Binding="{Binding UserSelect, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="50" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="学生" HorizontalAlignment="Left" Height="35" Margin="26,10,0,0" VerticalAlignment="Top" Width="370"/>
+        <Label Content="教师" HorizontalAlignment="Left" Height="35" Margin="401,10,0,0" VerticalAlignment="Top" Width="368"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="software_design.ReminderPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="ReminderPage" Height="450" Width="800">
+    <Grid Background="#FFFFFDED">
+        <TextBox x:Name="RemindContent" HorizontalAlignment="Left" Height="179" Margin="21,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="732" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" Background="#FFE0FFFD"/>
+        <Button x:Name="Set" Content="设置提醒" HorizontalAlignment="Left" Height="66" Margin="567,310,0,0" VerticalAlignment="Top" Width="186" Click="Set_Click" Background="#FFE4E4E4" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Label Content="                                      设置提示内容" HorizontalAlignment="Left" Height="38" Margin="21,41,0,0" VerticalAlignment="Top" Width="732" FontFamily="Arial Black" FontSize="24" Background="#FFCDFDC5"/>
+        <Label Content="                                        设置时间" HorizontalAlignment="Left" Height="37" Margin="21,268,0,0" VerticalAlignment="Top" Width="732" FontFamily="Arial Black" FontSize="24" RenderTransformOrigin="-3.376,-0.583" Background="#FFFADAFF"/>
+        <TextBox x:Name="Year" HorizontalAlignment="Left" Height="23" Margin="21,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontFamily="Arial Black" RenderTransformOrigin="-0.649,0.883" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="Month" HorizontalAlignment="Left" Height="23" Margin="109,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="Day" HorizontalAlignment="Left" Height="23" Margin="194,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <Label Content="年" HorizontalAlignment="Left" Height="38" Margin="21,310,0,0" VerticalAlignment="Top" Width="83" FontFamily="Arial Black" Background="#FFFFE0E0"/>
+        <Label Content="月" HorizontalAlignment="Left" Height="38" Margin="109,310,0,0" VerticalAlignment="Top" Width="77" FontFamily="Arial Black" Background="#FFE7F7D5"/>
+        <Label Content="日" HorizontalAlignment="Left" Height="38" Margin="194,310,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" Background="#FFD3F6EC"/>
+        <Label Content="小时" HorizontalAlignment="Left" Height="38" Margin="343,310,0,0" VerticalAlignment="Top" Width="100" FontFamily="Arial Black" Background="#FFF7E1F7"/>
+        <Label Content="分钟" HorizontalAlignment="Left" Height="38" Margin="448,310,0,0" VerticalAlignment="Top" Width="114" FontFamily="Arial Black" Background="#FFA7FDF6"/>
+        <TextBox x:Name="Hour" HorizontalAlignment="Left" Height="23" Margin="343,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="Minute" HorizontalAlignment="Left" Height="23" Margin="448,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+    </Grid>
+</Window>

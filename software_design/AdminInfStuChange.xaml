@@ -1,0 +1,37 @@
+﻿<Window x:Class="software_design.AdminInfStuChange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="AdminInfStuChange" Height="450" Width="800">
+    <Grid Background="#FFFDFFEE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+        <Label Content="姓名" HorizontalAlignment="Left" Height="48" Margin="150,9.6,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" FontSize="16" Grid.Row="1"/>
+        <Label x:Name="InfName_Copy" Content="性别" HorizontalAlignment="Left" Height="50" Margin="150,57.6,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" FontSize="16" Grid.Row="1" RenderTransformOrigin="0.511,-0.362"/>
+        <Label x:Name="InfName_Copy1" Content="班级" HorizontalAlignment="Left" Height="51" Margin="150,107.6,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" FontSize="16" Grid.Row="1"/>
+        <Label x:Name="InfName_Copy2" Content="邮箱" HorizontalAlignment="Left" Height="48" Margin="150,163.6,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" FontSize="16" Grid.Row="1"/>
+        <TextBox x:Name="InfName" HorizontalAlignment="Left" Height="48" Margin="225,9.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Grid.Row="1" Background="#FFE7C5C5" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="InfClass" HorizontalAlignment="Left" Height="51" Margin="225,107.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Grid.Row="1" Background="#FFBEFFC6" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <TextBox x:Name="InfEmail" HorizontalAlignment="Left" Height="53" Margin="225,158.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Grid.Row="1" Background="#FFFA9AE3" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="ButtonName" Content="修改" HorizontalAlignment="Left" Height="48" Margin="501,9.6,0,0" VerticalAlignment="Top" Width="54" Click="ButtonName_Click" Background="#FFA9EEA2" Grid.Row="1" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button x:Name="ButtonSex" Content="修改" HorizontalAlignment="Left" Height="50" Margin="501,57.6,0,0" VerticalAlignment="Top" Width="54" Click="ButtonSex_Click" Background="#FFC1CBF4" Grid.Row="1" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <Button x:Name="BUttonClass" Content="修改" HorizontalAlignment="Left" Height="51" Margin="501,107.6,0,0" VerticalAlignment="Top" Width="54" Click="BUttonClass_Click" Background="#FFF9E462" Grid.Row="1" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <Button x:Name="ButtonEmail" Content="修改" HorizontalAlignment="Left" Height="53" Margin="501,158.6,0,0" VerticalAlignment="Top" Width="54" Click="ButtonEmail_Click" Background="#FFF6EBF4" Grid.Row="1" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <Label Content="个人基本信息修改" HorizontalAlignment="Left" Height="38" Margin="302,34,0,0" VerticalAlignment="Top" Width="319" FontFamily="Arial Black" FontSize="20"/>
+        <ComboBox x:Name="InfSex" HorizontalAlignment="Left" Height="50" Margin="225,0,0,230" VerticalAlignment="Bottom" Width="276" Grid.Row="1" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFB0ABAB" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <RadioButton Content="男"/>
+            <RadioButton Content="女"/>
+        </ComboBox>
+    </Grid>
+</Window>

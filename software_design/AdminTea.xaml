@@ -1,0 +1,25 @@
+﻿<Window x:Class="software_design.AdminTea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="AdminTea" Height="450" Width="800">
+    <Grid Background="#FFFEFFE0">
+        <DataGrid Name="DG10" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,50,9.6,10" Background="#FFF9F3EE" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="职工号" Binding="{Binding UserCode}"  Width="150" />
+                <DataGridTextColumn Header="姓名"  Binding="{Binding UserName}" Width="100"/>
+                <DataGridTextColumn Header="性别" Binding="{Binding UserSex}" Width="100" />
+                <DataGridTextColumn Header="管理班级" Binding="{Binding UserClass}" Width="150" />
+                <DataGridTextColumn Header="邮箱" Binding="{Binding UserEmail}" Width="200" />
+                <DataGridCheckBoxColumn Header="选定" Binding="{Binding UserSelect,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="75" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Delete" Content="删除" HorizontalAlignment="Left" Height="31" Margin="10,14,0,0" VerticalAlignment="Top" Width="181" Click="Delete_Click" Background="#FFFF94EC" RenderTransformOrigin="0.675,0.517" BorderBrush="{x:Null}" FontSize="16" FontFamily="Arial Black"/>
+        <Button x:Name="RefreshStu" Content="刷新" HorizontalAlignment="Left" Height="31" Margin="196,14,0,0" VerticalAlignment="Top" Width="200" Click="RefreshStu_Click" Background="#FFF492CE" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="信息修改" HorizontalAlignment="Left" Height="31" Margin="603,14,0,0" VerticalAlignment="Top" Width="181" Click="Button_Click" Background="#FF98F78A" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="添加账户" HorizontalAlignment="Left" Height="31" Margin="401,14,0,0" VerticalAlignment="Top" Width="197" Click="Button_Click_1" Background="#FFCEBFC9" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16"/>
+    </Grid>
+</Window>

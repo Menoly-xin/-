@@ -1,0 +1,17 @@
+﻿<Window x:Class="software_design.SolveQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="SolveQuestion" Height="450" Width="800">
+    <Grid Background="#FFFFFFEE">
+        <Label Content="问题:" HorizontalAlignment="Left" Height="35" Margin="50,10,0,0" VerticalAlignment="Top" Width="691" FontFamily="Arial Black" FontSize="16" Background="#FFE8E8E8"/>
+        <Label Content="回答:" HorizontalAlignment="Left" Height="37" Margin="50,129,0,0" VerticalAlignment="Top" Width="691" RenderTransformOrigin="0.491,-0.811" FontFamily="Arial Black" FontSize="16" Background="#FFE4FAE5"/>
+        <TextBox x:Name="ans" HorizontalAlignment="Left" Height="179" Margin="50,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="691" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="16" Background="#FFD9FFF9"/>
+        <Button Content="提交答案" HorizontalAlignment="Left" Height="55" Margin="50,355,0,0" VerticalAlignment="Top" Width="691" Click="Button_Click" Background="#FFFFFCE6" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="question" HorizontalAlignment="Left" Height="74" Margin="50,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="691" FontFamily="Arial Black" FontSize="16" BorderBrush="{x:Null}" Background="#FFFAFFE0"/>
+
+    </Grid>
+</Window>

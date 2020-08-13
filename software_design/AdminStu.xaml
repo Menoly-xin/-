@@ -1,0 +1,26 @@
+﻿<Window x:Class="software_design.AdminStu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:software_design"
+        mc:Ignorable="d"
+        Title="AdminStu" Height="450" Width="800">
+    <Grid Background="#FFFFFBDF">
+
+        <DataGrid Name="DG9" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,50,9.6,10" Background="#FFFFFDED" BorderBrush="{x:Null}" FontFamily="Arial Black" FontSize="14" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="学号" Binding="{Binding UserCode}"  Width="150" />
+                <DataGridTextColumn Header="姓名"  Binding="{Binding UserName}" Width="100"/>
+                <DataGridTextColumn Header="性别" Binding="{Binding UserSex}" Width="100" />
+                <DataGridTextColumn Header="班级" Binding="{Binding UserClass}" Width="150" />
+                <DataGridTextColumn Header="邮箱" Binding="{Binding UserEmail}" Width="200" />
+                <DataGridCheckBoxColumn Header="选定" Binding="{Binding UserSelect,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="75" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Delete" Content="删除选中账户" HorizontalAlignment="Left" Height="31" Margin="10,14,0,0" VerticalAlignment="Top" Width="262" Click="Delete_Click" Background="#FFB3F9B1" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <Button x:Name="RefreshStu" Content="强制刷新" HorizontalAlignment="Left" Height="31" Margin="277,14,0,0" VerticalAlignment="Top" Width="274" Click="RefreshStu_Click" Background="#FFA8FFF4" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+        <Button Content="修改学生信息" HorizontalAlignment="Left" Height="31" Margin="556,14,0,0" VerticalAlignment="Top" Width="228" Click="Button_Click" Background="#FFF3C49A" FontSize="16" FontFamily="Arial Black" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>
